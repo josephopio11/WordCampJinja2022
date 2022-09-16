@@ -1,90 +1,260 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <title>WordCampJinja</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <title>CRUD-HTML-CSS</title>
+    <link href="crud.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" id="navId" role="tablist">
-            <li class="nav-item">
-                <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Active</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#tab2Id">Action</a>
-                    <a class="dropdown-item" href="#tab3Id">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#tab4Id">Action</a>
+
+    <div class="container">
+
+        <div class="products__list table  my-3">
+
+            <div class="customers__titlebar dflex justify-content-between align-items-center">
+                <div class="customers__titlebar--item">
+                    <h1 class="my-1">Products</h1>
                 </div>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Another link</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a href="#" class="nav-link disabled" data-bs-toggle="tab">Disabled</a>
-            </li>
-        </ul>
-        
-        <!-- Tab panes -->
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+                <div class="customers__titlebar--item">
+                    <button class="btn btn-secondary my-1">
+                        Add Product
+                    </button>
+                </div>
+            </div>
+
+            <div class="table--heading mt-2 products__list__heading " style="padding-top: 20px;background:#FFF">
+                <!-- <p class="table--heading--col1">&#32;</p> -->
+                <p class="table--heading--col1">image</p>
+                <p class="table--heading--col2">
+                    Product
+                </p>
+                <p class="table--heading--col4">Type</p>
+                <p class="table--heading--col3">
+                    Inventory
+                </p>
+                <!-- <p class="table--heading--col5">&#32;</p> -->
+                <p class="table--heading--col5">actions</p>
+            </div>
+
+            <!-- product 1 -->
+            <div class="table--items products__list__item">
+                <div class="products__list__item--imgWrapper">
+                    <img class="products__list__item--img" src="1.jpg" style="height: 40px;">
+                </div>
+                <a href="# " class="table--items--col2">
+                    Product name
+                </a>
+                <p class="table--items--col2">
+                    type
+                </p>
+                <p class="table--items--col3">
+                    10
+                </p>
+                <div>
+                    <button class="btn-icon btn-icon-success">
+                        <i class="fas fa-pencil-alt"></i>
+                    </button>
+                    <button class="btn-icon btn-icon-danger">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+
         </div>
-        
-        <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-        <script>
-            var triggerEl = document.querySelector('#navId a')
-            bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
-        </script>
-        
-    </header>
-    <main class="container">
 
 
 
-        <h1>Welcome to WordCampJinja2022</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nulla inventore, dignissimos libero corporis
-            provident ipsum molestiae vel nihil error, doloribus accusantium illum ab impedit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illo, beatae quasi quam dignissimos
-            accusantium harum magnam impedit illum quas id aperiam eum natus minima minus architecto ad rem aliquam
-            quibusdam quaerat veritatis neque saepe. Aperiam nostrum, maxime repellat sapiente, facere aspernatur quia
-            eum ab optio iusto iure perspiciatis esse sunt rerum exercitationem quisquam, veritatis aut nulla corporis
-            laudantium architecto quam accusamus officia. Accusamus fugiat eaque ea omnis voluptatem laborum, sint ullam
-            reprehenderit? Possimus quibusdam tenetur, ipsum perspiciatis quia necessitatibus cupiditate quaerat odit
-            nihil eligendi illo blanditiis, iste accusantium expedita ab fugiat. Ducimus enim, nulla aut officiis
-            nesciunt aliquid amet!</p>
-        <h2>Another heading</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt praesentium quisquam omnis quaerat sed
-            voluptatem facere debitis mollitia quasi error maxime quod ut rerum fuga tenetur consequatur quae, dolorem
-            delectus. Odit quis porro iusto, ex voluptatum mollitia vel voluptates, deleniti numquam facere totam
-            voluptate quidem rerum soluta magnam atque libero!</p>
-    </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
-        </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
-        </script>
+
+
+
+
+        <br><br><br>
+        <div class="products__create ">
+
+            <div class="products__create__titlebar dflex justify-content-between align-items-center">
+                <div class="products__create__titlebar--item">
+
+                    <h1 class="my-1">Add Product</h1>
+                </div>
+                <div class="products__create__titlebar--item">
+
+                    <button class="btn btn-secondary ml-1">
+                        Save
+                    </button>
+                </div>
+            </div>
+
+            <div class="products__create__cardWrapper mt-2">
+                <div class="products__create__main">
+                    <div class="products__create__main--addInfo card py-2 px-2 bg-white">
+                        <p class="mb-1">Name</p>
+                        <input type="text" class="input">
+
+                        <p class="my-1">Description (optional)</p>
+                        <textarea cols="10" rows="5" class="textarea"></textarea>
+
+                        <div class="products__create__main--media--images mt-2">
+                            <ul class="products__create__main--media--images--list list-unstyled">
+                                <li class="products__create__main--media--images--item">
+                                    <div class="products__create__main--media--images--item--imgWrapper">
+                                        <img class="products__create__main--media--images--item--img" alt="" />
+                                    </div>
+                                </li>
+                                <!-- upload image small -->
+                                <li class="products__create__main--media--images--item">
+                                    <form class="products__create__main--media--images--item--form">
+                                        <label class="products__create__main--media--images--item--form--label"
+                                            for="myfile">Add Image</label>
+                                        <input class="products__create__main--media--images--item--form--input"
+                                            type="file" id="myfile">
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="products__create__sidebar">
+                    <!-- Product Organization -->
+                    <div class="card py-2 px-2 bg-white">
+
+                        <!-- Product unit -->
+                        <div class="my-3">
+                            <p>Product type</p>
+                            <input type="text" class="input">
+                        </div>
+                        <hr>
+
+                        <!-- Product invrntory -->
+                        <div class="my-3">
+                            <p>Inventory</p>
+                            <input type="text" class="input">
+                        </div>
+                        <hr>
+
+                        <!-- Product Price -->
+                        <div class="my-3">
+                            <p>Price</p>
+                            <input type="text" class="input">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Footer Bar -->
+            <div class="dflex justify-content-between align-items-center my-3">
+                <p></p>
+                <button class="btn btn-secondary">Save</button>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <br><br><br>
+
+        <div class="products__edit ">
+
+            <div class="products__create__titlebar dflex justify-content-between align-items-center">
+                <div class="products__create__titlebar--item">
+
+                    <h1 class="my-1">Edit Product</h1>
+                </div>
+                <div class="products__create__titlebar--item">
+
+                    <button class="btn btn-secondary ml-1">
+                        Save
+                    </button>
+                </div>
+            </div>
+
+            <div class="products__create__cardWrapper mt-2">
+                <div class="products__create__main">
+                    <div class="products__create__main--addInfo card py-2 px-2 bg-white">
+                        <p class="mb-1">Name</p>
+                        <input type="text" class="input">
+
+                        <p class="my-1">Description (optional)</p>
+                        <textarea cols="10" rows="5" class="textarea"></textarea>
+
+                        <div class="products__create__main--media--images mt-2">
+                            <ul class="products__create__main--media--images--list list-unstyled">
+
+                                <li class="products__create__main--media--images--item">
+                                    <div class="products__create__main--media--images--item--imgWrapper">
+                                        <img class="products__create__main--media--images--item--img">
+                                    </div>
+                                </li>
+
+                                <!-- upload image small -->
+                                <li class="products__create__main--media--images--item">
+                                    <form class="products__create__main--media--images--item--form">
+                                        <label class="products__create__main--media--images--item--form--label"
+                                            for="myfile">Add Image</label>
+                                        <input class="products__create__main--media--images--item--form--input"
+                                            type="file" id="myfile">
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="products__create__sidebar">
+                    <!-- Product Organization -->
+                    <div class="card py-2 px-2 bg-white">
+
+                        <!-- Product unit -->
+                        <div class="my-3">
+                            <p>Product type</p>
+                            <input type="text" class="input">
+                        </div>
+                        <hr>
+
+                        <!-- Product invrntory -->
+                        <div class="my-3">
+                            <p>Inventory</p>
+                            <input type="text" class="input">
+                        </div>
+                        <hr>
+
+                        <!-- Product Price -->
+                        <div class="my-3">
+                            <p>Price</p>
+                            <input type="text" class="input">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Footer Bar -->
+            <div class="dflex justify-content-between align-items-center my-3">
+                <p></p>
+                <button class="btn btn-secondary">Save</button>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
 </body>
 
 </html>
